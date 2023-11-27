@@ -3,7 +3,9 @@ package ru.sarmosov.gpt.entity;
 
 import com.google.gson.annotations.SerializedName;
 
+
 public class Content {
+    @SerializedName("role")
     private String role;
     @SerializedName("content")
     private String answer;

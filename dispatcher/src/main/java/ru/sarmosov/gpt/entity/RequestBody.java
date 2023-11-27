@@ -1,15 +1,11 @@
 package ru.sarmosov.gpt.entity;
-
-
 import com.google.gson.annotations.SerializedName;
-import org.springframework.stereotype.Component;
-import ru.sarmosov.gpt.constants.Constants;
-
 import java.util.ArrayList;
 
 
 public class RequestBody {
 
+    @SerializedName("model")
     String model;
     @SerializedName("messages")
     ArrayList<Content> content = new ArrayList<>();

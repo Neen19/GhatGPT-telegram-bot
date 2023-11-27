@@ -42,7 +42,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             return;
         }
         log.debug(update.getMessage().getChat().getFirstName());
-        sendMessage(chatId, "Ответ генерирется...");
+        sendMessage(chatId, "Ответ генерируется...");
         sendMessage(chatId, service.gptAnswer(message));
     }
 
